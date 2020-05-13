@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D293F574-888D-467B-AD09-BA511EA383B7}</ProjectGuid>
+    <ProjectGuid>{113C2D5C-7E20-4FEA-8B9B-C8BEE7185AA1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>rppoonlv6</RootNamespace>
-    <AssemblyName>rppoonlv6</AssemblyName>
+    <RootNamespace>prviZadatak</RootNamespace>
+    <AssemblyName>prviZadatak</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
