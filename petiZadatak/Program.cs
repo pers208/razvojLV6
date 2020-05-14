@@ -13,10 +13,13 @@ namespace petiZadatak
         {
             AbstractLogger logger = new ConsoleLogger(MessageType.ALL);
             FileLogger fileLogger =new FileLogger(MessageType.ERROR | MessageType.WARNING, "logFile.txt");
-            StreamWriter streamWriter = new StreamWriter("logfile.txt");
-            logger.Log("404",MessageType.ERROR);
-            logger.Log("how you doin", MessageType.INFO);
-            logger.Log("keep your distance!", MessageType.WARNING);
+            fileLogger.SetNextLogger(logger);
+            logger.SetNextLogger(null);
+
+            fileLogger.Log("Test ALL ", MessageType.ALL);
+            fileLogger.Log("Test ERROR ", MessageType.ERROR);
+            fileLogger.Log("Test WARNING ", MessageType.WARNING);
+            fileLogger.Log("Test INFO ", MessageType.INFO);
         }
     }
 }
